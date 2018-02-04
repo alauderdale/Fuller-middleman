@@ -27,7 +27,7 @@ body{
   padding-top:81px;
 
   @include breakpoint(sm) {
-    padding-top:81px;
+    font-size:14px;
   }
 
 }
