@@ -191,19 +191,31 @@ h1, h2, h3, h4, h5, h6, p {
 h1 {
   font-size:38px;
   color:$header-text-color;
+  @include breakpoint(sm) {
+    font-size:26px;
+  }
 }
 
 h2 {
   font-size:35px;
   color:$header-text-color;
+  @include breakpoint(sm) {
+    font-size:24px;
+  }
 }
 h3 {
   font-size:24px;
   color:$header-text-color;
+  @include breakpoint(sm) {
+    font-size:20px;
+  }
 }
 h4 {
   font-size:20px;
   color:$header-text-color;
+  @include breakpoint(sm) {
+    font-size:18px;
+  }
 }
 h5 {
   font-size:14px;
@@ -216,6 +228,9 @@ h6 {
 p{
   font-size:16px;
   line-height:2.4rem;
+  @include breakpoint(sm) {
+    font-size:14px;
+  }
 }
 
 
