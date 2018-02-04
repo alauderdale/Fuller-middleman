@@ -74,6 +74,12 @@
 					color:shade($header-text-color,90%);
 				}
 			}
+			@include breakpoint(sm) {
+				font-size: 13px;
+			}
+			&.search-jobs-toggle{
+				visibility:hidden;
+			}
 		}
 	}
 	.btn{
