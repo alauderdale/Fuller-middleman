@@ -1,0 +1,49 @@
+
+
+
+:css
+	.global-nav{
+		border-bottom:none;
+	}
+%section.no-padding-top.white-section
+	.container
+		.row
+			.col-lg-12
+				.homepage-hero
+					.title-img
+						%img.img-responsive{:src=>"images/tmp/home-hero.png"}
+					.title-container
+						%h1.bold-font-name.text-uppercase
+							Make the change of a lifetime
+						%h4
+							Suspendisse at cursus nunc. Etiam fringilla mauris at ante euismod efficitur
+		.row
+			.col-lg-12
+				.home-search-panel
+					%form.form-inline
+						.form-group
+							.inner-addon.left-addon
+								%i.fa.fa-search
+								%input.form-control.input-lg{:placeholder => "Keyword"}
+						.form-group
+							.inner-addon.left-addon
+								%i.fa.fa-map-marker
+								%input.form-control.input-lg{:placeholder => "Location"}
+						%button.btn.btn-primary.btn-lg{:type => "submit"} 
+							Search Jobs
+%section.no-padding-top.white-section
+	.container
+		.row.margin-bottom
+			.col-lg-12
+				%h3.text-center.bold-font-name.text-uppercase
+					Browse Jobs by industry
+		.row
+			.col-lg-12
+				.industries-list
+					%ul.nav.nav-pills.nav-stacked
+						- data.industries.industries.each do |f|
+							%li
+								%a{:href=>"/listings"}
+									=f
+%section.white-section.no-padding-bottom.no-padding-top
+	=partial"shared/promo"
